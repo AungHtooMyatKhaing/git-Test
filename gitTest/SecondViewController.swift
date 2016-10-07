@@ -11,10 +11,12 @@ import UIKit
 class SecondViewController: UIViewController {
     
     @IBOutlet weak var lbl2 : UILabel!
+    @IBOutlet weak var lbl3 : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("Do Something")
         // Do any additional setup after loading the view.
     }
 
