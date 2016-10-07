@@ -18,27 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxA-Hd-b8G">
-                                <frame key="frameInset" minX="166" minY="323" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-O0-FeW">
-                                <frame key="frameInset" minX="166" minY="372" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-O0-FeW">
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="NAB-bb-Yfl" kind="show" id="kw6-qt-gYt"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bvl-Kq-PMW">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jx0-O0-FeW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="164" id="KaE-Fi-SjX"/>
+                            <constraint firstItem="jx0-O0-FeW" firstAttribute="top" secondItem="Bvl-Kq-PMW" secondAttribute="bottom" constant="24" id="QkK-ye-abL"/>
+                            <constraint firstItem="jx0-O0-FeW" firstAttribute="top" secondItem="Bvl-Kq-PMW" secondAttribute="bottom" constant="24" id="Y1W-2y-4ep"/>
+                            <constraint firstAttribute="trailing" secondItem="jx0-O0-FeW" secondAttribute="trailing" constant="165" id="ZAm-3C-Ec8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jx0-O0-FeW" secondAttribute="bottom" constant="265" id="amy-WC-iGg"/>
+                            <constraint firstItem="Bvl-Kq-PMW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="139" id="e4D-KM-WW5"/>
+                            <constraint firstAttribute="trailing" secondItem="Bvl-Kq-PMW" secondAttribute="trailing" constant="139" id="t1Q-Bs-sW2"/>
+                            <constraint firstItem="Bvl-Kq-PMW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="254" id="xhb-OR-sUl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="First View" id="z8a-8J-zLk"/>
                     <connections>
-                        <outlet property="lbl1" destination="cxA-Hd-b8G" id="NGn-Qr-8o1"/>
+                        <outlet property="txtBlahBlah" destination="Bvl-Kq-PMW" id="4Fp-C5-haT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
